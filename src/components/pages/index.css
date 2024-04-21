@@ -1,0 +1,149 @@
+.home_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  place-content: center;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+  border-radius: 8px;
+  margin-inline: auto;
+  background-color: #fff;
+  padding: 0 0 2rem 0;
+}
+
+.form_header {
+  padding: 3rem;
+  font-size: 2rem;
+}
+
+.form_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  width: 80%;
+}
+
+.edit_button {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  text-transform: capitalize !important;
+}
+
+@keyframes button {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.ani_button:hover {
+  animation: button 0.5s ease;
+}
+
+.search_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+.search_input {
+  flex-basis: 100%;
+
+  padding: 0.75rem;
+  border-radius: 1rem;
+  outline: none;
+  border: 2px solid var(--secondary-color);
+}
+.search_input:focus {
+  border: 2px solid skyblue;
+}
+.create_button {
+  flex-basis: min(200px, 25%);
+}
+
+.form-flex-center {
+  padding: 4rem;
+}
+
+.home_description {
+  padding: 2rem;
+  color: #fff;
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.home_description > img {
+  flex-basis: 50%;
+  width: 400px;
+}
+.home_description > p {
+  flex-basis: 50%;
+}
+.home_description > p > span {
+  font-size: 2rem;
+}
+.goto_sports {
+  background-color: black;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  float: right;
+  margin-top: 1rem;
+}
+.book_button {
+  background-color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  float: right;
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 640px) {
+  .form_flex {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .home_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .home_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+}

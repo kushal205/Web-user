@@ -1,0 +1,29 @@
+.navbar_container {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  background: var(--primary-color);
+  color: white;
+  z-index: 10;
+}
+.nav_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_details_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.logout {
+  border-radius: 0.5rem;
+  border: 1px solid hsl(0, 100%, 60%);
+  padding: 0.5rem 1rem;
+  background-color: hsl(0, 100%, 60%);
+}
